@@ -1,0 +1,51 @@
+.comingSoon {
+    background: #f2ede6;
+}
+
+.comingSoon__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.comingSoon__heading {
+    font-size: 7.8rem;
+    font-weight: 600;
+    color: #018294;
+}
+
+.comingSoon__desc {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin: 45px 0;
+}
+
+.comingSoon__wrap {
+    position: relative;
+}
+
+.comingSoon__input {
+    height: 60px;
+    width: 448px;
+    background: #fff;
+    border-radius: 999px;
+    padding: 0 165px 0 18px;
+    font-size: 1.8rem;
+    color: #2d2d2d;
+}
+
+.comingSoon__input-submit {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    min-width: 155px;
+    height: 60px;
+    color: #fff;
+    background: #018294;
+    font-size: 1.8rem;
+    border-radius: 999px;
+    cursor: pointer;
+}

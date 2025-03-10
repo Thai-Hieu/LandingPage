@@ -1,0 +1,34 @@
+.notFound {
+    background: #f2ede6;
+}
+
+.notFound__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.notFound__heading {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.notFound__img-error {
+    margin: 45px 0;
+}
+
+.notFound__btn-back {
+    padding: 16px 22px;
+    background: #018294;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 1.8rem;
+    transition: opacity 0.5s;
+}
+
+.notFound__btn-back:hover {
+    opacity: 0.6;
+}

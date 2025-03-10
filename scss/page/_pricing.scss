@@ -1,0 +1,108 @@
+// Pricing
+.pricing {
+    padding: 56px 0 50px;
+    background: #005461;
+}
+.pricing__inner {
+    border-radius: 12px;
+}
+.pricing__heading {
+    font-size: 5rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.pricing__desc {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.pricing-product {
+    background-color: white;
+    border-radius: 12px;
+    padding: 40px 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.5s;
+}
+.pricing-product:hover {
+    transform: translateY(-35px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    background-color: #018294;
+    color: #fff;
+}
+
+.pricing__icon {
+    margin: 0 auto 1rem;
+    width: 64px;
+    height: 64px;
+}
+.pricing-product:hover .pricing__description {
+    color: #fff;
+}
+.pricing-product:hover .pricing__duration {
+    color: #fff;
+}
+.pricing-product:hover .pricing__feature {
+    color: #fff;
+}
+.pricing__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+.pricing__description {
+    color: #4b5563;
+    margin-bottom: 15px;
+    line-height: 2.4rem;
+}
+.pricing__wraps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.pricing__price {
+    font-size: 2.25rem;
+    font-weight: bold;
+    margin-right: 4px;
+}
+.pricing__duration {
+    color: #6b7280;
+}
+.pricing__button {
+    background-color: #f7d047;
+    color: white;
+    font-weight: 600;
+    border-radius: 9999px;
+    margin-bottom: 30px;
+    padding: 12px 17px;
+    min-width: 160px;
+}
+.pricing__features {
+    margin: 20px 0 0 10px;
+    position: relative;
+}
+.pricing__features::after {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #f2ede6;
+}
+.pricing__feature {
+    --line-clamp: 2;
+    display: flex;
+    align-items: center;
+    color: #676562;
+    margin-bottom: 20px;
+}
+.pricing__feature-icon {
+    color: #14b8a6;
+    margin-right: 10px;
+}

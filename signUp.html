@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./assets/css/main.css" />
+        <script src="./assets/script/main.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./templates/header.html");
+        </script>
+
+        <div class="sign__up">
+            <div class="container">
+                <div class="container__wrap">
+                    <form class="form__singUp">
+                        <p class="title__signUp">Register</p>
+                        <p class="message__signUp">
+                            Signup now and get full access to our app.
+                        </p>
+                        <div class="flex__signUp">
+                            <label>
+                                <input
+                                    required=""
+                                    placeholder=""
+                                    type="text"
+                                    class="input"
+                                />
+                                <span>First Name</span>
+                            </label>
+
+                            <label>
+                                <input
+                                    required=""
+                                    placeholder=""
+                                    type="text"
+                                    class="input"
+                                />
+                                <span>Last Name</span>
+                            </label>
+                        </div>
+
+                        <label>
+                            <input
+                                required=""
+                                placeholder=""
+                                type="email"
+                                class="input"
+                            />
+                            <span>Email</span>
+                        </label>
+
+                        <label>
+                            <input
+                                required=""
+                                placeholder=""
+                                type="password"
+                                class="input"
+                            />
+                            <span>Password</span>
+                        </label>
+                        <label>
+                            <input
+                                required=""
+                                placeholder=""
+                                type="password"
+                                class="input"
+                            />
+                            <span>Confirm password</span>
+                        </label>
+                        <button class="submit__signUp">Submit</button>
+                        <p class="signin">
+                            Already have an acount ? <a href="/logIn.html">Signin</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer id="footer" class="footer"></footer>
+        <script>
+            load("#footer", "./templates/footer.html");
+        </script>
+        <script src="./assets/script/styles.js"></script>
+    </body>
+</html>

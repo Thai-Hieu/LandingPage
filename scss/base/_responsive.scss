@@ -1,0 +1,435 @@
+@media (min-width: 64em) {
+    .mobile-header {
+        display: none;
+    }
+    .toggle-menu {
+        display: none;
+    }
+    .form__singUp {
+        margin-top: 35px;
+    }
+    .container__login {
+        margin-top: 65px;
+    }
+}
+
+// Tablet & mobile
+@media screen and (max-width: 991px) {
+    .nav__menu {
+        display: none;
+    }
+    .hero__block-right {
+        display: none;
+    }
+    .footer .row {
+        flex-direction: column;
+    }
+    .toggle-menu svg {
+        width: 24px;
+        color: #666;
+    }
+
+    .menu-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s ease;
+    }
+    .menu__close {
+        position: absolute;
+        top: 8px;
+        right: 10px;
+        padding: 8px;
+        font-size: 3rem;
+    }
+    .menu-drawer {
+        position: fixed;
+        inset: 0 40% 0 0;
+        background: #fff;
+        z-index: 200;
+        padding: 25px 0 0 25px;
+        transform: translateX(-100%);
+        transition: 0.5s ease;
+    }
+
+    .menu-drawer ul {
+        margin-top: 32px;
+    }
+
+    .menu-drawer ul a {
+        display: block;
+        padding: 14px 0;
+        color: #333;
+        font-weight: 500;
+    }
+
+    .menu-checkbox:checked ~ .menu-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu-checkbox:checked ~ .menu-drawer {
+        transform: translateX(0);
+    }
+    .action__btn {
+        display: none;
+    }
+
+    .row__wrap {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+// Tablet
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    .container {
+        overflow: hidden;
+    }
+    .container-wrap {
+        width: 690px;
+    }
+    .hero__block-left {
+        width: 100%;
+        margin-bottom: 45px;
+    }
+    .hero__heading {
+        font-size: 9rem;
+        text-align: center;
+    }
+    .hero__desc {
+        font-size: 3.1rem;
+        line-height: 4.2rem;
+        text-align: center;
+        padding-right: 0;
+    }
+    .hero__heading-img-icon {
+        display: none;
+    }
+    .hero__block-right {
+        display: block;
+    }
+    .hero__action {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .hero__btn {
+        min-width: 210px;
+        height: 64px;
+    }
+    .works .row {
+        flex-direction: column;
+        width: 100%;
+    }
+    .works .col-padding {
+        width: 100%;
+    }
+    .container-product,
+    .container__product2,
+    .container-product-3,
+    .works__title,
+    .works__col-desc {
+        width: 100%;
+        max-width: 100%;
+    }
+    .container__product-3__cart {
+        height: 504px;
+    }
+    // About Us
+    .about__hero {
+        flex-direction: column;
+    }
+    .about__hero-left {
+        margin-bottom: 45px;
+    }
+    .about .row-one {
+        column-gap: 0;
+    }
+    .footer__list-item {
+        font-size: 1.4rem;
+    }
+}
+
+// Mobile
+@media (max-width: 46.1875em) {
+    .header__wrap {
+        padding: 10px 0;
+    }
+    .container {
+        overflow: hidden;
+    }
+    .nav__menu {
+        display: none;
+    }
+    .action {
+        display: none;
+    }
+    .hero {
+        padding-top: 20px;
+    }
+    .hero__heading {
+        font-size: 4rem;
+        text-align: center;
+    }
+    .hero__desc {
+        text-align: center;
+    }
+    .hero__heading-img-icon {
+        display: none;
+    }
+    .hero__action {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero__btn {
+        min-width: 120px;
+        font-size: 1.4rem;
+    }
+    .hero__block-right {
+        display: none;
+    }
+    .works__title {
+        font-size: 3.6rem;
+        width: 100%;
+    }
+    .works__col-desc {
+        width: 100%;
+        padding-right: 8px;
+    }
+    .price-add__price {
+        font-size: 1.8rem;
+    }
+    .price-add__button {
+        padding: 8px;
+    }
+    .total-checkout__button {
+        padding: 8px;
+        font-size: 1.4rem;
+    }
+    .features {
+        padding: 0 0 56px;
+    }
+    .features .col {
+        background: none;
+        border: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        padding: 16px 16px 0;
+    }
+    .features .col:last-child {
+        border-bottom: none;
+    }
+    .features__block-title {
+        font-size: 2.5rem;
+    }
+    .features__block-desc {
+        line-height: 3.2rem;
+    }
+    // Pricing
+    .pricing {
+        padding-bottom: 0;
+    }
+    .pricing-product {
+        margin-bottom: 30px;
+    }
+    .pricing__heading {
+        font-size: 4rem;
+    }
+    .pricing__desc {
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+    }
+    .pricing__description {
+        line-height: 2.4rem;
+    }
+    .pricing__feature {
+        --line-clamp: 2;
+        line-height: 2.4rem;
+    }
+    // Product
+    .producted {
+        padding: 30px 0;
+        background: #f2ede6;
+    }
+    .producted__header {
+        font-size: 3rem;
+    }
+    .producted__controls-button {
+        padding: 8px 12px;
+    }
+    .controls__sort-text {
+        margin-right: 3px;
+    }
+    .row__wrap {
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+    }
+    .card__img {
+        top: 95px;
+    }
+    .product__card-row {
+        width: 100%;
+    }
+    .actions__button--checkout,
+    .message__subtitle,
+    .header__card,
+    .actions__button--view {
+        margin-bottom: 0;
+    }
+    .message__title {
+        margin: 0 0 10px;
+    }
+    .actions__button--checkout,
+    .actions__button--view {
+        padding: 12px;
+    }
+    .grid {
+        gap: 10px;
+        flex-direction: column;
+        display: flex;
+    }
+
+    // Contact
+    .contact {
+        padding-top: 32px;
+    }
+    .contact__head {
+        font-size: 3.6rem;
+    }
+    .contact__desc {
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+    .contact__form-group-submit {
+        width: 100%;
+    }
+    .contact__input-submit {
+        width: 100%;
+        margin-top: 16px;
+    }
+    // About Us
+    .about {
+        padding-top: 35px;
+    }
+    .row-two {
+        padding-top: 28px;
+    }
+    .about__hero {
+        flex-direction: column;
+    }
+    .about__wraps {
+        padding-bottom: 12px;
+    }
+    .about__head {
+        font-size: 2.5rem;
+    }
+    .about__desc {
+        font-size: 1.3rem;
+    }
+    .about__hero-left {
+        margin-bottom: 45px;
+    }
+    .about__title {
+        font-size: 3rem;
+    }
+    .about__head2 {
+        font-size: 3rem;
+    }
+    .about__desc2 {
+        font-size: 1.4rem;
+    }
+    // 404
+    .notFound__heading {
+        font-size: 3rem;
+    }
+    .notFound__img-error {
+        width: 100%;
+    }
+    // Coming Soon
+    .comingSoon__heading {
+        font-size: 3.8rem;
+    }
+    .comingSoon__desc {
+        font-size: 1.6rem;
+        margin: 30px 0;
+        line-height: 2.4rem;
+    }
+    .comingSoon__input {
+        height: 55px;
+        width: 100%;
+        padding-right: 125px;
+    }
+    .comingSoon__input-submit {
+        height: 55px;
+        min-width: 110px;
+        font-size: 1.4rem;
+    }
+    // Form
+    .form__singUp,
+    .container__login {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 25px;
+    }
+    // Footer
+    .footer__groups {
+        flex-direction: column;
+        padding: 40px 24px;
+    }
+    .footer__menus {
+        flex-direction: column;
+    }
+    .footer .col {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: box-shadow 0.7s;
+        border-radius: 12px;
+        margin-top: 16px;
+        padding: 8px;
+    }
+    .footer__title {
+        font-size: 2.8rem;
+    }
+    .footer__desc {
+        font-size: 1.7rem;
+        line-height: 2.4rem;
+    }
+    .footer .col:hover {
+        box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.3);
+    }
+    .footer__group {
+        padding: 12px 36px;
+        margin-bottom: 8px;
+    }
+    .footer__group:hover {
+        box-shadow: none;
+    }
+    .footer__group-title {
+        font-size: 2.4rem;
+    }
+    .footer__button {
+        min-width: 200px;
+    }
+    .footer__list-item {
+        font-size: 1.3rem;
+    }
+    .footer__image {
+        margin-top: 25px;
+    }
+    .footer__list-menu {
+        flex-direction: column;
+    }
+    .footer__list-menu-item {
+        font-size: 2.2rem;
+    }
+    .footer__social-link {
+        margin-top: 12px;
+        font-size: 2.4rem;
+    }
+}

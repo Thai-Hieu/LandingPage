@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./assets/css/main.css" />
+        <script src="./assets/script/main.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./templates/header.html");
+        </script>
+        <!-- Pricing -->
+        <section class="pricing">
+            <div class="container">
+                <div class="pricing__inner">
+                    <h2 class="pricing__heading">Simple pricing</h2>
+                    <p class="pricing__desc">
+                        No credit card required. Cancel any time.
+                    </p>
+                    <div class="row row-cols-lg-3 row-cols-md-1 row-cols-sm-1">
+                        <!-- 1 -->
+                        <div class="col">
+                            <div class="pricing-product">
+                                <div class="pricing__img">
+                                    <img
+                                        src="./assets/icons/image 68.png"
+                                        onerror="this.onerror=null; this.src='https://placehold.co/64x64';"
+                                        alt="Rocket icon"
+                                        class="pricing__icon"
+                                    />
+                                </div>
+                                <h2 class="pricing__title">Free</h2>
+                                <p class="pricing__description line-clamp">
+                                    Starter plan to manage your one category and try
+                                    everything Sortler has to offer
+                                </p>
+                                <div class="pricing__wraps">
+                                    <div class="pricing__price">$0</div>
+                                    <div class="pricing__duration">/ free forever</div>
+                                </div>
+                                <button class="pricing__button">Book a Demo</button>
+                                <ul class="pricing__features">
+                                    <li class="pricing__feature line-clamp">
+                                        <i
+                                            class="fas fa-check-circle pricing__feature-icon"
+                                        ></i>
+                                        Up to 1K products included
+                                    </li>
+                                    <li class="pricing__feature line-clamp">
+                                        <i
+                                            class="fas fa-check-circle pricing__feature-icon"
+                                        ></i>
+                                        1 category included
+                                    </li>
+                                    <li class="pricing__feature line-clamp">
+                                        <i
+                                            class="fas fa-check-circle pricing__feature-icon"
+                                        ></i>
+                                        1 staff account included
+                                    </li>
+                                    <li class="pricing__feature line-clamp">
+                                        <i
+                                            class="fas fa-check-circle pricing__feature-icon"
+                                        ></i>
+                                        Indexation: ones a day
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- 2 -->
+                        <div class="col">
+                            <div class="pricing-product">
+                                <img
+                                    src="./assets/icons/image 68 (1).png"
+                                    onerror="this.onerror=null; this.src='https://placehold.co/64x64';"
+                                    alt="Rocket icon"
+                                    class="pricing__icon"
+                                />
+                                <h2 class="pricing__title">Business</h2>
+                                <p class="pricing__description line-clamp">
+                                    More power with thouthands products and dozens of
+                                    categories
+                                </p>
+                                <div class="pricing__wraps">
+                                    <div class="pricing__price">$39</div>
+                                    <div class="pricing__duration">
+                                        / month billed monthly
+                                    </div>
+                                </div>
+                                <button class="pricing__button">Book a Demo</button>
+                                <ul class="pricing__features">
+                                    <li class="pricing__feature line-clamp">
+                                        <i
+                                            class="fas fa-check-circle pricing__feature-icon"
+                                        ></i>
+                                        Up to 100k products included
+                                    </li>
+                                    <li class="pricing__feature line-clamp">
+                                        <i
+                                            class="fas fa-check-circle pricing__feature-icon"
+                                        ></i>
+                                        Up to 50 category included
+                                    </li>
+                                    <li class="pricing__feature line-clamp">
+                                        <i
+                                            class="fas fa-check-circle pricing__feature-icon"
+                                        ></i>
+                                        3 staff account included
+                                    </li>
+                                    <li class="pricing__feature line-clamp">
+                                        <i
+                                            class="fas fa-check-circle pricing__feature-icon"
+                                        ></i>
+                                        Indexation: twice a day
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- 3 -->
+                        <div class="col">
+                            <div class="pricing-product">
+                                <img
+                                    src="./assets/icons/image 68 (2).png"
+                                    onerror="this.onerror=null; this.src='https://placehold.co/64x64';"
+                                    alt="Rocket icon"
+                                    class="pricing__icon"
+                                />
+                                <h2 class="pricing__title">Advanced</h2>
+                                <p class="pricing__description line-clamp">
+                                    A lot of categories and products, premium support
+                                    and more...
+                                </p>
+                                <div class="pricing__wraps">
+                                    <div class="pricing__price">$99</div>
+                                    <div class="pricing__duration">
+                                        / month billed monthly
+                                    </div>
+                                </div>
+                                <button class="pricing__button">Book a Demo</button>
+                                <ul class="pricing__features">
+                                    <li class="pricing__feature line-clamp">
+                                        <i
+                                            class="fas fa-check-circle pricing__feature-icon"
+                                        ></i>
+                                        Up to 200k products included
+                                    </li>
+                                    <li class="pricing__feature line-clamp">
+                                        <i
+                                            class="fas fa-check-circle pricing__feature-icon"
+                                        ></i>
+                                        Up to 100 category included
+                                    </li>
+                                    <li class="pricing__feature line-clamp">
+                                        <i
+                                            class="fas fa-check-circle pricing__feature-icon"
+                                        ></i>
+                                        5 staff account included
+                                    </li>
+                                    <li class="pricing__feature line-clamp">
+                                        <i
+                                            class="fas fa-check-circle pricing__feature-icon"
+                                        ></i>
+                                        Indexation: each hour
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer id="footer" class="footer"></footer>
+        <script>
+            load("#footer", "./templates/footer.html");
+        </script>
+        <script src="./assets/script/styles.js"></script>
+    </body>
+</html>

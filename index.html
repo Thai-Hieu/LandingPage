@@ -1,0 +1,1901 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./assets/css/main.css" />
+        <script src="./assets/script/main.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- Thêm Splide.js CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/splide.min.css"
+        />
+        <!-- Slider js -->
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./templates/header.html");
+        </script>
+        <!-- Main -->
+        <main>
+            <section class="hero">
+                <div class="container">
+                    <div class="hero__inner">
+                        <div
+                            class="row row-cols-lg-2 row-cols-md-1 row-cols-sm-1 hero__row"
+                        >
+                            <div class="col hero__block-left">
+                                <h1 class="hero__heading">
+                                    Online catalog management
+                                    <span class="hero__heading-img">
+                                        <img
+                                            class="hero__heading-img-icon"
+                                            src="./assets/imgs/Rectangle 22.png"
+                                            alt=""
+                                        />
+                                    </span>
+                                    tool
+                                </h1>
+                                <p class="hero__desc">
+                                    Skyrocket your online store conversion rate the
+                                    customer experience with visual merchandising.
+                                </p>
+                                <div class="hero__action">
+                                    <button class="hero__btn hero__btn-one">
+                                        Book a Demo
+                                    </button>
+                                    <button class="hero__btn hero__btn-two">
+                                        Ask a Question
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="col hero__block-right">
+                                <!-- Sidebar -->
+                                <div class="container-wrap">
+                                    <!-- Sidebar -->
+                                    <div class="sidebar">
+                                        <div class="sidebar__header">
+                                            <span class="sidebar__logo">S</span>
+                                            <span class="sidebar__title">Smaller</span>
+                                        </div>
+                                        <ul class="sidebar__menu">
+                                            <li
+                                                class="sidebar__menu-item sidebar__menu-item--active"
+                                            >
+                                                <a href="#" class="sidebar__menu-link">
+                                                    <i class="fas fa-home"></i>
+                                                    <span>Home</span>
+                                                </a>
+                                            </li>
+                                            <li class="sidebar__menu-item">
+                                                <a href="#" class="sidebar__menu-link">
+                                                    <i class="fas fa-chart-bar"></i>
+                                                    <span>Dashboard</span>
+                                                </a>
+                                            </li>
+                                            <li class="sidebar__menu-item">
+                                                <a href="#" class="sidebar__menu-link">
+                                                    <i class="fas fa-file-alt"></i>
+                                                    <span>Reports</span>
+                                                </a>
+                                            </li>
+                                            <li class="sidebar__menu-item">
+                                                <a href="#" class="sidebar__menu-link">
+                                                    <i class="fas fa-box-open"></i>
+                                                    <span>Products</span>
+                                                </a>
+                                            </li>
+                                            <li class="sidebar__menu-item">
+                                                <a href="#" class="sidebar__menu-link">
+                                                    <i class="fas fa-users"></i>
+                                                    <span>Teams</span>
+                                                </a>
+                                            </li>
+                                            <li class="sidebar__menu-item">
+                                                <a href="#" class="sidebar__menu-link">
+                                                    <i class="fas fa-user-friends"></i>
+                                                    <span>Customer</span>
+                                                </a>
+                                            </li>
+                                            <li class="sidebar__menu-item">
+                                                <a href="#" class="sidebar__menu-link">
+                                                    <i class="fas fa-cog"></i>
+                                                    <span>Setting</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="sidebar__profile">
+                                            <a href="#" class="sidebar__profile-link">
+                                                <img
+                                                    src="./assets/icons/Cross.png"
+                                                    onerror="this.onerror=null; this.src='https://placehold.co/80x80';"
+                                                    alt="Profile picture"
+                                                />
+                                            </a>
+                                            <span>Profile</span>
+                                        </div>
+                                    </div>
+                                    <!-- Main Content -->
+                                    <div class="main-content">
+                                        <div class="search-bar">
+                                            <div class="relative">
+                                                <input
+                                                    class="search-bar__input"
+                                                    placeholder="search for a product"
+                                                    type="text"
+                                                />
+                                                <i
+                                                    class="fas fa-search search-bar__icon"
+                                                ></i>
+                                            </div>
+                                            <div class="search-bar__actions">
+                                                <div class="search-bar__wrap">
+                                                    <img
+                                                        class="search-bar__icon-card"
+                                                        src="./assets/icons/briefcase.png"
+                                                        alt=""
+                                                    />
+                                                    <button class="search-bar__card">
+                                                        Cart
+                                                    </button>
+                                                </div>
+                                                <select class="search-bar__select">
+                                                    <option>Woman</option>
+                                                    <option>Man</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <h1 class="dashboard__title line-clamp">
+                                            Dashboard
+                                        </h1>
+                                        <div class="product-grid">
+                                            <!-- <div class="splide" id="product-card"> -->
+                                            <!-- <div class="splide__track"> -->
+                                            <!-- <div class="splide__list"> -->
+                                            <div
+                                                class="splide__slide product-card"
+                                                style="background-color: #fef3c7"
+                                            >
+                                                <a href="#!">
+                                                    <img
+                                                        alt="Yellow Pajama"
+                                                        class="product-card__image"
+                                                        height="80"
+                                                        src="./assets/imgs/vegettable1.avif"
+                                                        ;
+                                                        onerror="this.onerror=null; this.src='https://placehold.co/80x80';"
+                                                        width="80"
+                                                /></a>
+                                                <span class="product-card__badge"
+                                                    >New</span
+                                                >
+                                                <h2
+                                                    class="product-card__title line-clamp"
+                                                >
+                                                    Yello Pajama
+                                                </h2>
+                                                <div class="product-card__rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <div class="product-card__price">
+                                                    <span
+                                                        class="product-card__price-current"
+                                                        >$37.10</span
+                                                    >
+                                                    <span
+                                                        class="product-card__price-original"
+                                                        >$130.10</span
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="splide__slide product-card"
+                                                style="background-color: #d1fae5"
+                                            >
+                                                <a href="#!">
+                                                    <img
+                                                        alt="Green Flannel"
+                                                        class="product-card__image"
+                                                        height="80"
+                                                        src="./assets/imgs/vegettable2.avif"
+                                                        ;
+                                                        onerror="this.onerror=null; this.src='https://placehold.co/80x80';"
+                                                        width="80"
+                                                /></a>
+                                                <span class="product-card__badge"
+                                                    >New</span
+                                                >
+                                                <h2
+                                                    class="product-card__title line-clamp"
+                                                >
+                                                    Green Flannel
+                                                </h2>
+                                                <div class="product-card__rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <div class="product-card__price">
+                                                    <span
+                                                        class="product-card__price-current"
+                                                        >$28.10</span
+                                                    >
+                                                    <span
+                                                        class="product-card__price-original"
+                                                        >$111.10</span
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="splide__slide product-card"
+                                                style="background-color: #ffedd5"
+                                            >
+                                                <a href="#!">
+                                                    <img
+                                                        alt="Plain Pajama"
+                                                        class="product-card__image"
+                                                        height="80"
+                                                        src="./assets/imgs/vegettable3.avif"
+                                                        ;
+                                                        onerror="this.onerror=null; this.src='https://placehold.co/80x80';"
+                                                        width="80"
+                                                /></a>
+                                                <span class="product-card__badge"
+                                                    >New</span
+                                                >
+                                                <h2
+                                                    class="product-card__title line-clamp"
+                                                >
+                                                    Plain Pajama
+                                                </h2>
+                                                <div class="product-card__rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <div class="product-card__price">
+                                                    <span
+                                                        class="product-card__price-current"
+                                                        >$30.10</span
+                                                    >
+                                                    <span
+                                                        class="product-card__price-original"
+                                                        >$119.10</span
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="splide__slide product-card"
+                                                style="background-color: #dbeafe"
+                                            >
+                                                <a href="#!">
+                                                    <img
+                                                        alt="Cuffed Pajama"
+                                                        class="product-card__image"
+                                                        height="80"
+                                                        src="./assets/imgs/vegettable4.avif"
+                                                        ;
+                                                        onerror="this.onerror=null; this.src='https://placehold.co/80x80';"
+                                                        width="80"
+                                                /></a>
+                                                <span class="product-card__badge"
+                                                    >New</span
+                                                >
+                                                <h2
+                                                    class="product-card__title line-clamp"
+                                                >
+                                                    Cuffed pajama
+                                                </h2>
+                                                <div class="product-card__rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <div class="product-card__price">
+                                                    <span
+                                                        class="product-card__price-current"
+                                                        >$40.10</span
+                                                    >
+                                                    <span
+                                                        class="product-card__price-original"
+                                                        >$154.10</span
+                                                    >
+                                                </div>
+                                            </div>
+                                            <!-- <div
+                                                class="splide__slide product-card"
+                                                style="background-color: #ffedd5"
+                                            >
+                                                <a href="#!">
+                                                    <img
+                                                        alt="Plain Pajama"
+                                                        class="product-card__image"
+                                                        height="80"
+                                                        src="./assets/imgs/vegettable3.avif"
+                                                        ;
+                                                        onerror="this.onerror=null; this.src='https://placehold.co/80x80';"
+                                                        width="80"
+                                                /></a>
+                                                <span class="product-card__badge"
+                                                    >New</span
+                                                >
+                                                <h2
+                                                    class="product-card__title line-clamp"
+                                                >
+                                                    Plain Pajama
+                                                </h2>
+                                                <div class="product-card__rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <div class="product-card__price">
+                                                    <span
+                                                        class="product-card__price-current"
+                                                        >$30.10</span
+                                                    >
+                                                    <span
+                                                        class="product-card__price-original"
+                                                        >$119.10</span
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="splide__slide product-card"
+                                                style="background-color: #dbeafe"
+                                            >
+                                                <a href="#!">
+                                                    <img
+                                                        alt="Cuffed Pajama"
+                                                        class="product-card__image"
+                                                        height="80"
+                                                        src="./assets/imgs/vegettable4.avif"
+                                                        ;
+                                                        onerror="this.onerror=null; this.src='https://placehold.co/80x80';"
+                                                        width="80"
+                                                /></a>
+                                                <span class="product-card__badge"
+                                                    >New</span
+                                                >
+                                                <h2
+                                                    class="product-card__title line-clamp"
+                                                >
+                                                    Cuffed pajama
+                                                </h2>
+                                                <div class="product-card__rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <div class="product-card__price">
+                                                    <span
+                                                        class="product-card__price-current"
+                                                        >$40.10</span
+                                                    >
+                                                    <span
+                                                        class="product-card__price-original"
+                                                        >$154.10</span
+                                                    >
+                                                </div>
+                                            </div> -->
+                                            <!-- </div> -->
+                                            <!-- </div> -->
+                                            <!-- </div>  -->
+                                        </div>
+                                        <div class="chart">
+                                            <div
+                                                class="chart__title text-lg font-bold mb-4"
+                                            >
+                                                $4,509
+                                            </div>
+                                            <a href="#!"
+                                                ><img
+                                                    alt="Graph showing sales data"
+                                                    class="chart__image"
+                                                    height="80"
+                                                    src="./assets/imgs/Group 231.png"
+                                                    onerror="this.onerror=null; this.src='https://placehold.co/600x80';"
+                                                    width="600"
+                                            /></a>
+                                        </div>
+                                        <div class="more-product">
+                                            <a href="#!">
+                                                <div class="more-product__summary">
+                                                    <a href="#!"
+                                                        ><img
+                                                            alt="Plain Pajama"
+                                                            class="more-product__summary-image"
+                                                            height="48"
+                                                            src="./assets/imgs/vegettable48.avif"
+                                                            ;
+                                                            onerror="this.onerror=null; this.src='https://placehold.co/48x48';"
+                                                            width="48"
+                                                    /></a>
+                                                    <h2
+                                                        class="more-product__summary-title line-clamp"
+                                                    >
+                                                        Plain Pajama
+                                                    </h2>
+                                                    <span
+                                                        class="more-product__summary-price"
+                                                        >$35.00</span
+                                                    >
+                                                </div></a
+                                            >
+                                            <a href="#!"
+                                                ><div class="more-product__summary">
+                                                    <a href="#!">
+                                                        <img
+                                                            alt="Plain Pajama"
+                                                            class="more-product__summary-image"
+                                                            height="48"
+                                                            src="./assets/imgs/vegettable48-2.avif"
+                                                            ;
+                                                            onerror="this.onerror=null; this.src='https://placehold.co/48x48';"
+                                                            width="48"
+                                                    /></a>
+                                                    <h2
+                                                        class="more-product__summary-title line-clamp"
+                                                    >
+                                                        Plain Pajama
+                                                    </h2>
+                                                    <span
+                                                        class="more-product__summary-price"
+                                                        >$35.00</span
+                                                    >
+                                                </div></a
+                                            >
+                                            <a href="#!"
+                                                ><div class="more-product__summary">
+                                                    <a href="#!"
+                                                        ><img
+                                                            alt="Plain Pajama"
+                                                            class="more-product__summary-image"
+                                                            height="48"
+                                                            src="./assets/imgs/vegettable48-3.avif"
+                                                            ;
+                                                            onerror="this.onerror=null; this.src='https://placehold.co/48x48';"
+                                                            width="48"
+                                                    /></a>
+                                                    <h2
+                                                        class="more-product__summary-title line-clamp"
+                                                    >
+                                                        Plain Pajama
+                                                    </h2>
+                                                    <span
+                                                        class="more-product__summary-price"
+                                                        >$35.00</span
+                                                    >
+                                                </div></a
+                                            >
+                                            <button class="more-product__button">
+                                                More Product
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Services-->
+            <section class="services">
+                <div class="container">
+                    <div class="services__inner">
+                        <h2 class="services__head line-clamp">
+                            Merchandising to increase sales.
+                        </h2>
+                        <div
+                            class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 services__rows"
+                        >
+                            <!-- 1 -->
+                            <div class="col services__col">
+                                <div class="services__imgs-parent">
+                                    <img
+                                        src="./assets/icons/Icon.png"
+                                        onerror="this.onerror=null; this.src='https://placehold.co/150x150';"
+                                        alt=""
+                                        class="services__img-child"
+                                    />
+                                </div>
+                                <div class="services__infos">
+                                    <h3 class="services__title line-clamp">
+                                        Conversion rate skyrockets.
+                                    </h3>
+                                    <p class="services__desc line-clamp">
+                                        Convert more online sales with our visual
+                                        merchandising interface.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- 2 -->
+                            <div class="col services__col">
+                                <div class="services__imgs-parent">
+                                    <img
+                                        src="./assets/icons/Icon (1).png"
+                                        onerror="this.onerror=null; this.src='https://placehold.co/150x150';"
+                                        alt=""
+                                        class="services__img-child"
+                                    />
+                                </div>
+                                <div class="services__infos">
+                                    <h3 class="services__title line-clamp">
+                                        Increase average order value
+                                    </h3>
+                                    <p class="services__desc line-clamp">
+                                        Increase average order value of your online
+                                        store by 17% with this little trick.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- 3 -->
+                            <div class="col services__col">
+                                <div class="services__imgs-parent">
+                                    <img
+                                        src="./assets/icons/Icon (2).png"
+                                        onerror="this.onerror=null; this.src='https://placehold.co/150x150';"
+                                        alt=""
+                                        class="services__img-child"
+                                    />
+                                </div>
+                                <div class="services__infos">
+                                    <h3 class="services__title line-clamp">
+                                        Spend less time for management
+                                    </h3>
+                                    <p class="services__desc line-clamp">
+                                        Let your employees spend less time managing the
+                                        online selling it.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Works -->
+            <section class="works">
+                <div class="container">
+                    <div class="works__inner">
+                        <div class="works__wraps">
+                            <h3 class="works__head">How Smaller works</h3>
+                            <p class="works__desc">
+                                Smaller is a cloud-based tool for merchandisers and
+                                eCommerce professionals.
+                            </p>
+                        </div>
+                        <!-- row 1 -->
+                        <div
+                            class="row row-cols-lg-2 row-cols-md-1 row-cols-sm-1 works__row"
+                        >
+                            <div class="col col-padding">
+                                <div class="container-product">
+                                    <div class="header-product">
+                                        <h1 class="header-heading">
+                                            Product Categories
+                                        </h1>
+                                        <span class="header-desc"
+                                            >Showing 45 items</span
+                                        >
+                                    </div>
+                                    <div class="filters-product">
+                                        <div class="filters-wrap">
+                                            <a class="filters-desc" href="#!">
+                                                <span>Filter by</span>
+                                            </a>
+                                            <a href="#!">
+                                                <i
+                                                    class="fas fa-chevron-down filters-icon"
+                                                >
+                                                </i
+                                            ></a>
+                                        </div>
+                                        <div class="filters-wrap">
+                                            <a class="filters-desc" href="#!">
+                                                <span> Sort by </span>
+                                            </a>
+                                            <a href="#!"
+                                                ><i
+                                                    class="fas fa-chevron-down filters-icon"
+                                                >
+                                                </i
+                                            ></a>
+                                        </div>
+                                    </div>
+                                    <div class="product">
+                                        <input
+                                            type="checkbox"
+                                            checked
+                                            class="product-input"
+                                            id="checked-one"
+                                        />
+                                        <a href="#!">
+                                            <img
+                                                class="product-img"
+                                                src="https://storage.googleapis.com/a1aa/image/KHcm3U4l-IL-00DTgnt9w1J6IacMkHS2dz3c0LGa8NE.jpg"
+                                                onerror="this.onerror=null; this.src='https://placehold.co/52x52';"
+                                                alt="Men Green Slim Fit Casual Shirt"
+                                        /></a>
+                                        <label for="checked-one">
+                                            <h2 class="product-title line-clamp">
+                                                Levis
+                                            </h2>
+                                            <p class="product-desc line-clamp">
+                                                Men Green Slim Fit Casual Shirt
+                                            </p>
+                                        </label>
+                                    </div>
+                                    <div class="product">
+                                        <input
+                                            type="checkbox"
+                                            checked
+                                            class="product-input"
+                                            id="checked-two"
+                                        />
+                                        <a href="#!">
+                                            <img
+                                                class="product-img"
+                                                src="https://storage.googleapis.com/a1aa/image/PPEa3KS1hG2qDenVhkKpY6kOZWLywIavvUqgU3RzWsE.jpg"
+                                                onerror="this.onerror=null; this.src='https://placehold.co/52x52';"
+                                                alt="Women Yellow Printed Kurta"
+                                        /></a>
+                                        <label for="checked-two">
+                                            <h2 class="product-title line-clamp">
+                                                Anouk
+                                            </h2>
+                                            <p class="product-desc line-clamp">
+                                                Women Yellow Printed Kurta
+                                            </p>
+                                        </label>
+                                    </div>
+                                    <div class="product">
+                                        <input
+                                            type="checkbox"
+                                            class="product-input"
+                                            id="checked-three"
+                                        />
+                                        <a href="#!">
+                                            <img
+                                                class="product-img"
+                                                src="https://storage.googleapis.com/a1aa/image/4NpqLEHpap9Sp7yA7bQN7sqp1JUX07RBMhk6P4KRnnM.jpg"
+                                                onerror="this.onerror=null; this.src='https://placehold.co/52x52';"
+                                                alt="Sage Green Cotton T-shirt"
+                                        /></a>
+                                        <label for="checked-three">
+                                            <h2 class="product-title line-clamp">
+                                                DILLINGER
+                                            </h2>
+                                            <p class="product-desc line-clamp">
+                                                Sage Green Cotton T-shirt
+                                            </p>
+                                        </label>
+                                    </div>
+                                    <div class="actions-product">
+                                        <button
+                                            class="actions-cancel actions-button"
+                                            disabled
+                                        >
+                                            Cancel
+                                        </button>
+                                        <button class="actions-next actions-button">
+                                            Next
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col col-padding">
+                                <h5 class="works__title">
+                                    Set basic sorting rules for any categories
+                                </h5>
+                                <p class="works__col-desc">
+                                    Bulk sort products on any category page you need,
+                                    combine different sort rules:
+                                </p>
+
+                                <ul class="works__list">
+                                    <li class="works__item">Newest</li>
+                                    <li class="works__item">Bestseller</li>
+                                    <li class="works__item">Most reviewable</li>
+                                    <li class="works__item">Price</li>
+                                    <li class="works__item">Custom Attribute</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- row 2 -->
+                        <div
+                            class="row row-cols-lg-2 row-cols-md-1 row-cols-sm-1 works__row works__row-two"
+                        >
+                            <div class="col col-padding">
+                                <div class="container__product2">
+                                    <h1 class="container__title">drag and drop</h1>
+                                    <div class="container__product2-items">
+                                        <div
+                                            class="container__product2-items__placeholder"
+                                        ></div>
+                                        <div class="splide" id="product-slider">
+                                            <div class="splide__track">
+                                                <div class="splide__list">
+                                                    <!-- Item 1 -->
+                                                    <div
+                                                        class="splide__slide container__product2-item"
+                                                    >
+                                                        <i
+                                                            class="fas fa-ellipsis-h container__product2-item__icon"
+                                                        ></i>
+                                                        <img
+                                                            alt="Brown Cotton Skirt"
+                                                            class="container__product2-item__image"
+                                                            src="https://placehold.co/136x136"
+                                                            onerror="this.onerror=null; this.src='https://placehold.co/136x136';"
+                                                        />
+                                                        <h2
+                                                            class="container__product2-item__title"
+                                                        >
+                                                            brown Cotton Skirt
+                                                        </h2>
+                                                        <p
+                                                            class="container__product2-item__subtitle"
+                                                        >
+                                                            Girl Dress
+                                                        </p>
+                                                        <div
+                                                            class="container__product2-item__wrap"
+                                                        >
+                                                            <div
+                                                                class="container__product2-item__colors"
+                                                            >
+                                                                <span
+                                                                    class="container__product2-item__color item__color--blue active"
+                                                                ></span>
+                                                                <span
+                                                                    class="container__product2-item__color item__color--green"
+                                                                ></span>
+                                                                <span
+                                                                    class="container__product2-item__color item__color--purple"
+                                                                ></span>
+                                                            </div>
+                                                            <p
+                                                                class="container__product2-item__price"
+                                                            >
+                                                                $140
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Item 2 -->
+                                                    <div
+                                                        class="splide__slide container__product2-item"
+                                                    >
+                                                        <i
+                                                            class="fas fa-ellipsis-h container__product2-item__icon"
+                                                        ></i>
+                                                        <img
+                                                            alt="Green Cotton Sweater"
+                                                            class="container__product2-item__image"
+                                                            src="https://placehold.co/136x136"
+                                                            onerror="this.onerror=null; this.src='https://placehold.co/136x136';"
+                                                        />
+                                                        <h2
+                                                            class="container__product2-item__title"
+                                                        >
+                                                            Green Cotton Sweater
+                                                        </h2>
+                                                        <p
+                                                            class="container__product2-item__subtitle"
+                                                        >
+                                                            Girl Dress
+                                                        </p>
+                                                        <div
+                                                            class="container__product2-item__wrap"
+                                                        >
+                                                            <div
+                                                                class="container__product2-item__colors"
+                                                            >
+                                                                <span
+                                                                    class="container__product2-item__color item__color--blue"
+                                                                ></span>
+                                                                <span
+                                                                    class="container__product2-item__color item__color--green active"
+                                                                ></span>
+                                                                <span
+                                                                    class="container__product2-item__color item__color--purple"
+                                                                ></span>
+                                                            </div>
+                                                            <p
+                                                                class="container__product2-item__price"
+                                                            >
+                                                                $150
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Item 3 -->
+                                                    <div
+                                                        class="splide__slide container__product2-item"
+                                                    >
+                                                        <i
+                                                            class="fas fa-ellipsis-h container__product2-item__icon"
+                                                        ></i>
+                                                        <img
+                                                            alt="Pink Cotton Sweater"
+                                                            class="container__product2-item__image"
+                                                            src="https://placehold.co/136x136"
+                                                            onerror="this.onerror=null; this.src='https://placehold.co/136x136';"
+                                                        />
+                                                        <h2
+                                                            class="container__product2-item__title"
+                                                        >
+                                                            Pink Cotton Sweater
+                                                        </h2>
+                                                        <p
+                                                            class="container__product2-item__subtitle"
+                                                        >
+                                                            Girl Dress
+                                                        </p>
+                                                        <div
+                                                            class="container__product2-item__wrap"
+                                                        >
+                                                            <div
+                                                                class="container__product2-item__colors"
+                                                            >
+                                                                <span
+                                                                    class="container__product2-item__color item__color--blue"
+                                                                ></span>
+                                                                <span
+                                                                    class="container__product2-item__color item__color--green"
+                                                                ></span>
+                                                                <span
+                                                                    class="container__product2-item__color item__color--purple active"
+                                                                ></span>
+                                                            </div>
+                                                            <p
+                                                                class="container__product2-item__price"
+                                                            >
+                                                                $150
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Item 4 -->
+                                                    <div
+                                                        class="splide__slide container__product2-item"
+                                                    >
+                                                        <i
+                                                            class="fas fa-ellipsis-h container__product2-item__icon"
+                                                        ></i>
+                                                        <img
+                                                            alt="Pink Cotton Sweater"
+                                                            class="container__product2-item__image"
+                                                            src="https://placehold.co/136x136"
+                                                            onerror="this.onerror=null; this.src='https://placehold.co/136x136';"
+                                                        />
+                                                        <h2
+                                                            class="container__product2-item__title"
+                                                        >
+                                                            Pink Cotton Sweater
+                                                        </h2>
+                                                        <p
+                                                            class="container__product2-item__subtitle"
+                                                        >
+                                                            Girl Dress
+                                                        </p>
+                                                        <div
+                                                            class="container__product2-item__wrap"
+                                                        >
+                                                            <div
+                                                                class="container__product2-item__colors"
+                                                            >
+                                                                <span
+                                                                    class="container__product2-item__color item__color--blue"
+                                                                ></span>
+                                                                <span
+                                                                    class="container__product2-item__color item__color--green"
+                                                                ></span>
+                                                                <span
+                                                                    class="container__product2-item__color item__color--purple active"
+                                                                ></span>
+                                                            </div>
+                                                            <p
+                                                                class="container__product2-item__price"
+                                                            >
+                                                                $150
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Item 5 -->
+                                                    <div
+                                                        class="splide__slide container__product2-item"
+                                                    >
+                                                        <i
+                                                            class="fas fa-ellipsis-h container__product2-item__icon"
+                                                        ></i>
+                                                        <img
+                                                            alt="Pink Cotton Sweater"
+                                                            class="container__product2-item__image"
+                                                            src="https://placehold.co/136x136"
+                                                            onerror="this.onerror=null; this.src='https://placehold.co/136x136';"
+                                                        />
+                                                        <h2
+                                                            class="container__product2-item__title"
+                                                        >
+                                                            Pink Cotton Sweater
+                                                        </h2>
+                                                        <p
+                                                            class="container__product2-item__subtitle"
+                                                        >
+                                                            Girl Dress
+                                                        </p>
+                                                        <div
+                                                            class="container__product2-item__wrap"
+                                                        >
+                                                            <div
+                                                                class="container__product2-item__colors"
+                                                            >
+                                                                <span
+                                                                    class="container__product2-item__color item__color--blue"
+                                                                ></span>
+                                                                <span
+                                                                    class="container__product2-item__color item__color--green"
+                                                                ></span>
+                                                                <span
+                                                                    class="container__product2-item__color item__color--purple active"
+                                                                ></span>
+                                                            </div>
+                                                            <p
+                                                                class="container__product2-item__price"
+                                                            >
+                                                                $150
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col col-padding">
+                                <h5 class="works__title">
+                                    Drag and Drop catalog management
+                                </h5>
+                                <p class="works__col-desc">
+                                    Use the Drag and Drop function to sort your products
+                                    in the most intuitive, quickest way.
+                                </p>
+                                <p class="works__col-desc works__col-desc-two">
+                                    Set scores for products by adding number, SKUs with
+                                    higher scores will be displayed on top of the
+                                    category pages.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- row 3 -->
+                        <div
+                            class="row row-cols-lg-2 row-cols-md-1 row-cols-sm-1 works__row works__row-three"
+                        >
+                            <div class="col col-padding">
+                                <div class="container-product-3">
+                                    <h1 class="container__header">Add To Cart</h1>
+                                    <div class="grid">
+                                        <div class="container__product-3">
+                                            <a href="#!"
+                                                ><img
+                                                    class="container__product-3__image"
+                                                    src="https://placehold.co/170x170"
+                                                    onerror="this.onerror=null; this.src='https://placehold.co/170x170';"
+                                                    alt="Green T-shirt hanging on a wooden hanger"
+                                            /></a>
+                                            <div class="thumbnails">
+                                                <a href="#!"
+                                                    ><img
+                                                        class="thumbnails__image thumbnails__image--selected"
+                                                        src="https://placehold.co/25x25"
+                                                        onerror="this.onerror=null; this.src='https://placehold.co/25x25';"
+                                                        alt="Green T-shirt thumbnail"
+                                                /></a>
+                                                <a href="#!">
+                                                    <img
+                                                        class="thumbnails__image"
+                                                        src="https://placehold.co/25x25"
+                                                        onerror="this.onerror=null; this.src='https://placehold.co/25x25';"
+                                                        alt="Green T-shirt thumbnail"
+                                                /></a>
+                                                <a href="#!"
+                                                    ><img
+                                                        class="thumbnails__image"
+                                                        src="https://placehold.co/25x25"
+                                                        onerror="this.onerror=null; this.src='https://placehold.co/25x25';"
+                                                        alt="Green T-shirt thumbnail"
+                                                /></a>
+                                            </div>
+                                            <div class="quantity">
+                                                <p class="quantity__label">Quantity</p>
+                                                <div class="quantity__controls">
+                                                    <button
+                                                        class="quantity__button"
+                                                        id="decrease-quantity"
+                                                    >
+                                                        -
+                                                    </button>
+                                                    <span
+                                                        class="quantity__value"
+                                                        id="quantity"
+                                                        >1</span
+                                                    >
+                                                    <button
+                                                        class="quantity__button"
+                                                        id="increase-quantity"
+                                                    >
+                                                        +
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="color-selection">
+                                                <p class="color-selection__label">
+                                                    Select Color
+                                                </p>
+                                                <div class="color-selection__options">
+                                                    <button
+                                                        class="color-selection__button color-selection__button--green selected"
+                                                    ></button>
+                                                    <button
+                                                        class="color-selection__button color-selection__button--gray"
+                                                    ></button>
+                                                    <button
+                                                        class="color-selection__button color-selection__button--blue"
+                                                    ></button>
+                                                </div>
+                                            </div>
+                                            <div class="price-add">
+                                                <span class="price-add__price"
+                                                    >$120</span
+                                                >
+                                                <button
+                                                    class="price-add__button"
+                                                    id="add-to-cart"
+                                                >
+                                                    Add to cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="container__product-3__cart">
+                                            <div class="cart-items">
+                                                <div class="cart-item">
+                                                    <div class="cart-item__info">
+                                                        <a href="#!"
+                                                            ><img
+                                                                class="cart-item__image"
+                                                                src="https://placehold.co/30x30"
+                                                                onerror="this.onerror=null; this.src='https://placehold.co/30x30';"
+                                                                alt="Ribbed Tee thumbnail"
+                                                        /></a>
+                                                        <div>
+                                                            <p class="cart-item__name">
+                                                                Ribbed Tee
+                                                            </p>
+                                                            <p class="cart-item__price">
+                                                                $16.99
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cart-item__controls">
+                                                        <span
+                                                            class="cart-item__quantity"
+                                                            >1</span
+                                                        >
+                                                        <button
+                                                            class="cart-item__delete"
+                                                        >
+                                                            <i class="fas fa-trash"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="cart-item">
+                                                    <div class="cart-item__info">
+                                                        <a href="#!">
+                                                            <img
+                                                                class="cart-item__image"
+                                                                src="https://placehold.co/30x30"
+                                                                onerror="this.onerror=null; this.src='https://placehold.co/30x30';"
+                                                                alt="Mounta Tee thumbnail"
+                                                        /></a>
+                                                        <div>
+                                                            <p class="cart-item__name">
+                                                                Mounta Tee
+                                                            </p>
+                                                            <p class="cart-item__price">
+                                                                $21.99
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cart-item__controls">
+                                                        <span
+                                                            class="cart-item__quantity"
+                                                            >1</span
+                                                        >
+                                                        <button
+                                                            class="cart-item__delete"
+                                                        >
+                                                            <i class="fas fa-trash"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="cart-item">
+                                                    <div class="cart-item__info">
+                                                        <a href="#!"
+                                                            ><img
+                                                                class="cart-item__image"
+                                                                src="https://placehold.co/30x30"
+                                                                onerror="this.onerror=null; this.src='https://placehold.co/30x30';"
+                                                                alt="Stripe Crop thumbnail"
+                                                        /></a>
+                                                        <div>
+                                                            <p class="cart-item__name">
+                                                                Stripe Crop
+                                                            </p>
+                                                            <p class="cart-item__price">
+                                                                $22.99
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cart-item__controls">
+                                                        <span
+                                                            class="cart-item__quantity"
+                                                            >1</span
+                                                        >
+                                                        <button
+                                                            class="cart-item__delete"
+                                                        >
+                                                            <i class="fas fa-trash"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="empty-cart-message">
+                                                Sorry! Your cart is empty!
+                                            </p>
+                                            <div class="total-checkout">
+                                                <span class="total-checkout__label"
+                                                    >Total price</span
+                                                >
+                                                <span class="total-checkout__price"
+                                                    >61.97</span
+                                                >
+                                            </div>
+                                            <button
+                                                class="total-checkout__button"
+                                                id="checkout-button"
+                                            >
+                                                Checkout
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="checkout-modal" class="modal">
+                                    <div class="modal-content">
+                                        <span class="modal-close">&times;</span>
+                                        <p>
+                                            Total price to pay: $<span
+                                                id="modal-total-price"
+                                                >0.00</span
+                                            >
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col col-padding">
+                                <h5 class="works__title">
+                                    Drag and Drop catalog management
+                                </h5>
+                                <p class="works__col-desc">
+                                    Use the Drag and Drop function to sort your products
+                                    in the most intuitive, quickest way.
+                                </p>
+                                <p class="works__col-desc works__col-desc-two">
+                                    Set scores for products by adding number, SKUs with
+                                    higher scores will be displayed on top of the
+                                    category pages.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- row 4 -->
+                        <div
+                            class="row row-cols-lg-2 row-cols-md-1 row-cols-sm-1 works__row works__row-two"
+                        >
+                            <div class="col col-padding">
+                                <div class="container__product2">
+                                    <h1 class="container__title">low-stock products</h1>
+                                    <div class="container__product2-items">
+                                        <div
+                                            class="container__product2-items__placeholder"
+                                        ></div>
+                                        <div class="splide" id="product-slider-two">
+                                            <div class="splide__track">
+                                                <div class="splide__list">
+                                                    <!-- Item 1 -->
+                                                    <div
+                                                        class="splide__slide container__product2-item"
+                                                    >
+                                                        <i
+                                                            class="fas fa-ellipsis-h container__product2-item__icon"
+                                                        ></i>
+                                                        <img
+                                                            alt="Brown Cotton Skirt"
+                                                            class="container__product2-item__image"
+                                                            src="https://placehold.co/136x136"
+                                                            onerror="this.onerror=null; this.src='https://placehold.co/136x136';"
+                                                        />
+                                                        <h2
+                                                            class="container__product2-item__title"
+                                                        >
+                                                            Long Sleeve Shirt
+                                                        </h2>
+                                                        <p
+                                                            class="container__product2-item__subtitle"
+                                                        >
+                                                            Style Solid Color
+                                                        </p>
+                                                        <div
+                                                            class="container__product2-item__wrap"
+                                                        >
+                                                            <div
+                                                                class="container__product2-item__colors"
+                                                            >
+                                                                <span
+                                                                    class="container__product2-item__color item__color--blue active"
+                                                                ></span>
+                                                                <span
+                                                                    class="container__product2-item__color item__color--green"
+                                                                ></span>
+                                                                <span
+                                                                    class="container__product2-item__color item__color--purple"
+                                                                ></span>
+                                                            </div>
+                                                            <p
+                                                                class="container__product2-item__price"
+                                                            >
+                                                                $140
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Item 2 -->
+                                                    <div
+                                                        class="splide__slide container__product2-item"
+                                                    >
+                                                        <i
+                                                            class="fas fa-ellipsis-h container__product2-item__icon"
+                                                        ></i>
+                                                        <img
+                                                            alt="Green Cotton Sweater"
+                                                            class="container__product2-item__image"
+                                                            src="https://placehold.co/136x136"
+                                                            onerror="this.onerror=null; this.src='https://placehold.co/136x136';"
+                                                        />
+                                                        <h2
+                                                            class="container__product2-item__title"
+                                                        >
+                                                            Collar Casual Shirt
+                                                        </h2>
+                                                        <p
+                                                            class="container__product2-item__subtitle"
+                                                        >
+                                                            Breathable Turn-Down
+                                                        </p>
+                                                        <div
+                                                            class="container__product2-item__wrap"
+                                                        >
+                                                            <div
+                                                                class="container__product2-item__colors"
+                                                            >
+                                                                <span
+                                                                    class="container__product2-item__color item__color--blue"
+                                                                ></span>
+                                                                <span
+                                                                    class="container__product2-item__color item__color--green active"
+                                                                ></span>
+                                                                <span
+                                                                    class="container__product2-item__color item__color--purple"
+                                                                ></span>
+                                                            </div>
+                                                            <p
+                                                                class="container__product2-item__price"
+                                                            >
+                                                                $150
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Item 3 -->
+                                                    <div
+                                                        class="splide__slide container__product2-item"
+                                                    >
+                                                        <i
+                                                            class="fas fa-ellipsis-h container__product2-item__icon"
+                                                        ></i>
+                                                        <img
+                                                            alt="Pink Cotton Sweater"
+                                                            class="container__product2-item__image"
+                                                            src="https://placehold.co/136x136"
+                                                            onerror="this.onerror=null; this.src='https://placehold.co/136x136';"
+                                                        />
+                                                        <h2
+                                                            class="container__product2-item__title"
+                                                        >
+                                                            Double Pocket Shirt
+                                                        </h2>
+                                                        <p
+                                                            class="container__product2-item__subtitle"
+                                                        >
+                                                            Cotton Solid Color
+                                                        </p>
+                                                        <div
+                                                            class="container__product2-item__wrap"
+                                                        >
+                                                            <div
+                                                                class="container__product2-item__colors"
+                                                            >
+                                                                <span
+                                                                    class="container__product2-item__color item__color--blue"
+                                                                ></span>
+                                                                <span
+                                                                    class="container__product2-item__color item__color--green"
+                                                                ></span>
+                                                                <span
+                                                                    class="container__product2-item__color item__color--purple active"
+                                                                ></span>
+                                                            </div>
+                                                            <p
+                                                                class="container__product2-item__price"
+                                                            >
+                                                                $150
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Item 4 -->
+                                                    <div
+                                                        class="splide__slide container__product2-item"
+                                                    >
+                                                        <i
+                                                            class="fas fa-ellipsis-h container__product2-item__icon"
+                                                        ></i>
+                                                        <img
+                                                            alt="Pink Cotton Sweater"
+                                                            class="container__product2-item__image"
+                                                            src="https://placehold.co/136x136"
+                                                            onerror="this.onerror=null; this.src='https://placehold.co/136x136';"
+                                                        />
+                                                        <h2
+                                                            class="container__product2-item__title"
+                                                        >
+                                                            Double Pocket Shirt
+                                                        </h2>
+                                                        <p
+                                                            class="container__product2-item__subtitle"
+                                                        >
+                                                            Cotton Solid Color
+                                                        </p>
+                                                        <div
+                                                            class="container__product2-item__wrap"
+                                                        >
+                                                            <div
+                                                                class="container__product2-item__colors"
+                                                            >
+                                                                <span
+                                                                    class="container__product2-item__color item__color--blue"
+                                                                ></span>
+                                                                <span
+                                                                    class="container__product2-item__color item__color--green"
+                                                                ></span>
+                                                                <span
+                                                                    class="container__product2-item__color item__color--purple active"
+                                                                ></span>
+                                                            </div>
+                                                            <p
+                                                                class="container__product2-item__price"
+                                                            >
+                                                                $150
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Item 5 -->
+                                                    <div
+                                                        class="splide__slide container__product2-item"
+                                                    >
+                                                        <i
+                                                            class="fas fa-ellipsis-h container__product2-item__icon"
+                                                        ></i>
+                                                        <img
+                                                            alt="Pink Cotton Sweater"
+                                                            class="container__product2-item__image"
+                                                            src="https://placehold.co/136x136"
+                                                            onerror="this.onerror=null; this.src='https://placehold.co/136x136';"
+                                                        />
+                                                        <h2
+                                                            class="container__product2-item__title"
+                                                        >
+                                                            Double Pocket Shirt
+                                                        </h2>
+                                                        <p
+                                                            class="container__product2-item__subtitle"
+                                                        >
+                                                            Cotton Solid Color
+                                                        </p>
+                                                        <div
+                                                            class="container__product2-item__wrap"
+                                                        >
+                                                            <div
+                                                                class="container__product2-item__colors"
+                                                            >
+                                                                <span
+                                                                    class="container__product2-item__color item__color--blue"
+                                                                ></span>
+                                                                <span
+                                                                    class="container__product2-item__color item__color--green"
+                                                                ></span>
+                                                                <span
+                                                                    class="container__product2-item__color item__color--purple active"
+                                                                ></span>
+                                                            </div>
+                                                            <p
+                                                                class="container__product2-item__price"
+                                                            >
+                                                                $150
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col col-padding">
+                                <h5 class="works__title">
+                                    Create rules of low-stock and out-of-stock products
+                                </h5>
+                                <p class="works__col-desc">
+                                    Place low-stock items at the top of your product
+                                    list. Move out-of-stock products down the catalog.
+                                </p>
+                                <p class="works__col-desc works__col-desc-two">
+                                    Place low-stock items at the top of your product
+                                    list. Move out-of-stock products down the catalog.
+                                </p>
+                                <p class="works__col-desc works__col-desc-two">
+                                    Create rules for applying discounts in your catalog.
+                                    Simplify loyalty program management, thereby
+                                    increasing sales.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Features -->
+            <section class="features">
+                <div class="container">
+                    <div class="features__inner">
+                        <h1 class="features__heading">Benefits</h1>
+                        <div
+                            class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 features__row-one g-xl-4"
+                        >
+                            <div class="col">
+                                <div class="features__block">
+                                    <div class="features__block-icon">
+                                        <img
+                                            src="./assets/icons/Union (Stroke).png"
+                                            onerror="this.onerror=null; this.src='https://placehold.co/64x64';"
+                                            alt=""
+                                            class="features__block-img"
+                                        />
+                                    </div>
+                                    <h2 class="features__block-title line-clamp">
+                                        Compatibility
+                                    </h2>
+                                    <p class="features__block-desc line-clamp">
+                                        Sortler supports all popular eCommerce
+                                        solutions, including Magento, Shopify,
+                                        WooCommerce, BigCommerce.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="features__block">
+                                    <div class="features__block-icon">
+                                        <img
+                                            src="./assets/icons/Rectangle 80 (Stroke).png"
+                                            onerror="this.onerror=null; this.src='https://placehold.co/64x64';"
+                                            alt=""
+                                            class="features__block-img"
+                                        />
+                                    </div>
+                                    <h2 class="features__block-title line-clamp">
+                                        Simplified merchandising
+                                    </h2>
+                                    <p class="features__block-desc line-clamp">
+                                        Your employees, work faster and the less time
+                                        they spend on online visual merchandising tasks.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="features__block">
+                                    <div class="features__block-icon">
+                                        <img
+                                            src="./assets/icons/Group 378.png"
+                                            onerror="this.onerror=null; this.src='https://placehold.co/64x64';"
+                                            alt=""
+                                            class="features__block-img"
+                                        />
+                                    </div>
+                                    <h2 class="features__block-title line-clamp">
+                                        No Coding Required
+                                    </h2>
+                                    <p class="features__block-desc line-clamp">
+                                        Everything is designed in such a way as to put
+                                        the smart sorting system into operation without
+                                        delay.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 features__row g-xl-4"
+                        >
+                            <div class="col">
+                                <div class="features__block">
+                                    <div class="features__block-icon">
+                                        <img
+                                            src="./assets/icons/Union (Stroke).png"
+                                            onerror="this.onerror=null; this.src='https://placehold.co/64x64';"
+                                            alt=""
+                                            class="features__block-img"
+                                        />
+                                    </div>
+                                    <h2 class="features__block-title line-clamp">
+                                        Compatibility
+                                    </h2>
+                                    <p class="features__block-desc line-clamp">
+                                        Sortler supports all popular eCommerce
+                                        solutions, including Magento, Shopify,
+                                        WooCommerce, BigCommerce.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="features__block">
+                                    <div class="features__block-icon">
+                                        <img
+                                            src="./assets/icons/Rectangle 80 (Stroke).png"
+                                            onerror="this.onerror=null; this.src='https://placehold.co/64x64';"
+                                            alt=""
+                                            class="features__block-img"
+                                        />
+                                    </div>
+                                    <h2 class="features__block-title line-clamp">
+                                        Simplified merchandising
+                                    </h2>
+                                    <p class="features__block-desc line-clamp">
+                                        Your employees, work faster and the less time
+                                        they spend on online visual merchandising tasks.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="features__block">
+                                    <div class="features__block-icon">
+                                        <img
+                                            src="./assets/icons/Group 378.png"
+                                            onerror="this.onerror=null; this.src='https://placehold.co/64x64';"
+                                            alt=""
+                                            class="features__block-img"
+                                        />
+                                    </div>
+                                    <h2 class="features__block-title line-clamp">
+                                        No Coding Required
+                                    </h2>
+                                    <p class="features__block-desc line-clamp">
+                                        Everything is designed in such a way as to put
+                                        the smart sorting system into operation without
+                                        delay.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Pricing -->
+            <section class="pricing">
+                <div class="container">
+                    <div class="pricing__inner">
+                        <h2 class="pricing__heading">Simple pricing</h2>
+                        <p class="pricing__desc">
+                            No credit card required. Cancel any time.
+                        </p>
+                        <div class="row row-cols-lg-3 row-cols-md-1 row-cols-sm-1">
+                            <!-- 1 -->
+                            <div class="col">
+                                <div class="pricing-product">
+                                    <div class="pricing__img">
+                                        <img
+                                            src="./assets/icons/image 68.png"
+                                            onerror="this.onerror=null; this.src='https://placehold.co/64x64';"
+                                            alt="Rocket icon"
+                                            class="pricing__icon"
+                                        />
+                                    </div>
+                                    <h2 class="pricing__title">Free</h2>
+                                    <p class="pricing__description">
+                                        Starter plan to manage your one category and try
+                                        everything Sortler has to offer
+                                    </p>
+                                    <div class="pricing__wraps">
+                                        <div class="pricing__price">$0</div>
+                                        <div class="pricing__duration">
+                                            / free forever
+                                        </div>
+                                    </div>
+                                    <button class="pricing__button">Book a Demo</button>
+                                    <ul class="pricing__features">
+                                        <li class="pricing__feature">
+                                            <i
+                                                class="fas fa-check-circle pricing__feature-icon"
+                                            ></i>
+                                            Up to 1K products included
+                                        </li>
+                                        <li class="pricing__feature">
+                                            <i
+                                                class="fas fa-check-circle pricing__feature-icon"
+                                            ></i>
+                                            1 category included
+                                        </li>
+                                        <li class="pricing__feature">
+                                            <i
+                                                class="fas fa-check-circle pricing__feature-icon"
+                                            ></i>
+                                            1 staff account included
+                                        </li>
+                                        <li class="pricing__feature">
+                                            <i
+                                                class="fas fa-check-circle pricing__feature-icon"
+                                            ></i>
+                                            Indexation: ones a day
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- 2 -->
+                            <div class="col">
+                                <div class="pricing-product">
+                                    <img
+                                        src="./assets/icons/image 68 (1).png"
+                                        onerror="this.onerror=null; this.src='https://placehold.co/64x64';"
+                                        alt="Rocket icon"
+                                        class="pricing__icon"
+                                    />
+                                    <h2 class="pricing__title">Business</h2>
+                                    <p class="pricing__description">
+                                        More power with thouthands products and dozens
+                                        of categories
+                                    </p>
+                                    <div class="pricing__wraps">
+                                        <div class="pricing__price">$39</div>
+                                        <div class="pricing__duration">
+                                            / month billed monthly
+                                        </div>
+                                    </div>
+                                    <button class="pricing__button">Book a Demo</button>
+                                    <ul class="pricing__features">
+                                        <li class="pricing__feature">
+                                            <i
+                                                class="fas fa-check-circle pricing__feature-icon"
+                                            ></i>
+                                            Up to 100k products included
+                                        </li>
+                                        <li class="pricing__feature">
+                                            <i
+                                                class="fas fa-check-circle pricing__feature-icon"
+                                            ></i>
+                                            Up to 50 category included
+                                        </li>
+                                        <li class="pricing__feature">
+                                            <i
+                                                class="fas fa-check-circle pricing__feature-icon"
+                                            ></i>
+                                            3 staff account included
+                                        </li>
+                                        <li class="pricing__feature">
+                                            <i
+                                                class="fas fa-check-circle pricing__feature-icon"
+                                            ></i>
+                                            Indexation: twice a day
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- 3 -->
+                            <div class="col">
+                                <div class="pricing-product">
+                                    <img
+                                        src="./assets/icons/image 68 (2).png"
+                                        onerror="this.onerror=null; this.src='https://placehold.co/64x64';"
+                                        alt="Rocket icon"
+                                        class="pricing__icon"
+                                    />
+                                    <h2 class="pricing__title">Advanced</h2>
+                                    <p class="pricing__description">
+                                        A lot of categories and products, premium
+                                        support and more...
+                                    </p>
+                                    <div class="pricing__wraps">
+                                        <div class="pricing__price">$99</div>
+                                        <div class="pricing__duration">
+                                            / month billed monthly
+                                        </div>
+                                    </div>
+                                    <button class="pricing__button">Book a Demo</button>
+                                    <ul class="pricing__features">
+                                        <li class="pricing__feature">
+                                            <i
+                                                class="fas fa-check-circle pricing__feature-icon"
+                                            ></i>
+                                            Up to 200k products included
+                                        </li>
+                                        <li class="pricing__feature">
+                                            <i
+                                                class="fas fa-check-circle pricing__feature-icon"
+                                            ></i>
+                                            Up to 100 category included
+                                        </li>
+                                        <li class="pricing__feature">
+                                            <i
+                                                class="fas fa-check-circle pricing__feature-icon"
+                                            ></i>
+                                            5 staff account included
+                                        </li>
+                                        <li class="pricing__feature">
+                                            <i
+                                                class="fas fa-check-circle pricing__feature-icon"
+                                            ></i>
+                                            Indexation: each hour
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Chưa tối ưu -->
+        <!-- <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                new Splide("#product-slider", {
+                    type: "loop",
+                    perPage: 1,
+                    gap: "1rem",
+                    pagination: true, // Bật dấu chấm (dots)
+                    arrows: false, // Tắt mũi tên
+                    autoplay: true,
+                    fixedWidth: "136px", // Giữ nguyên chiều rộng
+                    fixedHeight: "182px", // Giữ nguyên chiều cao
+                    breakpoints: {
+                        768: { perPage: 2, fixedWidth: "136px", fixedHeight: "182px" },
+                        480: { perPage: 1, fixedWidth: "136px", fixedHeight: "182px" },
+                    },
+                }).mount();
+            });
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                new Splide("#product-slider-two", {
+                    type: "loop",
+                    perPage: 1,
+                    gap: "1rem",
+                    pagination: true, // Bật dấu chấm (dots)
+                    arrows: false, // Tắt mũi tên
+                    autoplay: true,
+                    fixedWidth: "136px", // Giữ nguyên chiều rộng
+                    fixedHeight: "182px", // Giữ nguyên chiều cao
+                    breakpoints: {
+                        768: { perPage: 2, fixedWidth: "136px", fixedHeight: "182px" },
+                        480: { perPage: 1, fixedWidth: "136px", fixedHeight: "182px" },
+                    },
+                }).mount();
+            });
+        </script> -->
+        <!-- Tối ưu nhẹ -->
+        <!-- <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                function initSplide(selector) {
+                    new Splide(selector, {
+                        type: "loop",
+                        perPage: 1,
+                        gap: "1rem",
+                        pagination: true, // Hiển thị dots
+                        arrows: false, // Tắt nút điều hướng
+                        autoplay: true, // Tự động chạy
+                        interval: 2000, // Mỗi lần chuyển slide mất 2 giây (giảm xuống nhanh hơn)
+                        speed: 600, // Thời gian hiệu ứng chuyển slide (mặc định 400ms)
+                        fixedWidth: "136px",
+                        fixedHeight: "182px",
+                        breakpoints: {
+                            768: { perPage: 2 },
+                            480: { perPage: 1 },
+                        },
+                    }).mount();
+                }
+                initSplide("#product-card");
+                initSplide("#product-slider");
+                initSplide("#product-slider-two");
+            });
+        </script> -->
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                function initSplide(selector, options) {
+                    new Splide(selector, {
+                        type: "loop",
+                        perPage: 1,
+                        gap: "1rem",
+                        pagination: true,
+                        arrows: false,
+                        autoplay: true,
+                        interval: 2000,
+                        speed: 600,
+                        ...options,
+                    }).mount();
+                }
+
+                // initSplide("#product-card", {
+                //     fixedWidth: "127px",
+                //     fixedHeight: "155px",
+                // });
+
+                initSplide("#product-slider", {
+                    fixedWidth: "136px",
+                    fixedHeight: "182px",
+                });
+
+                initSplide("#product-slider-two", {
+                    fixedWidth: "136px",
+                    fixedHeight: "182px",
+                });
+            });
+        </script>
+
+        <!-- Footer -->
+        <footer id="footer" class="footer"></footer>
+        <script>
+            load("#footer", "./templates/footer.html");
+        </script>
+        <script src="./assets/script/styles.js"></script>
+    </body>
+</html>

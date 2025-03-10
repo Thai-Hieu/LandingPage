@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../assets/css/main.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+        <div class="header__wraps">
+            <div class="container">
+                <div class="header__wrap">
+                    <!-- Tablet/mobile menu -->
+                    <label for="menu-checkbox" class="toggle-menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path
+                                fill="currentColor"
+                                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                            />
+                        </svg>
+                    </label>
+                    <a href="/">
+                        <img
+                            src="./assets/icons/Logo.png"
+                            alt="Logo"
+                            class="header__logo logo"
+                        />
+                    </a>
+
+                    <nav class="nav__menu">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="/product.html" class="nav__link line-clamp"
+                                    >Product</a
+                                >
+                            </li>
+                            <li class="nav__item">
+                                <a href="/pricing.html" class="nav__link line-clamp"
+                                    >Pricing</a
+                                >
+                            </li>
+                            <li class="nav__item">
+                                <a href="/contactUs.html" class="nav__link line-clamp"
+                                    >Contact Us</a
+                                >
+                            </li>
+                            <li class="nav__item">
+                                <a href="/blog.html" class="nav__link line-clamp"
+                                    >Blog</a
+                                >
+                            </li>
+                            <li class="nav__item">
+                                <a href="/about.html" class="nav__link line-clamp"
+                                    >About Us</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="action">
+                        <a href="/signUp.html" class="action__btn">Sign Up</a>
+                        <a href="/logIn.html" class="action__btn">Sign In</a>
+                        <button href="#!" class="btn">Book a Demo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Tablet/mobile header -->
+        <div class="mobile-header">
+            <input
+                type="checkbox"
+                name=""
+                id="menu-checkbox"
+                class="menu-checkbox"
+                hidden
+            />
+
+            <!-- Overlay -->
+            <label for="menu-checkbox" class="menu-overlay"></label>
+            <!-- Menu content -->
+            <div class="menu-drawer">
+                <!-- Navigation -->
+                <ul id="mobile-nav">
+                    <label for="menu-checkbox" class="menu__close">X</label>
+                    <li class="nav__item">
+                        <a href="/product.html" class="nav__link line-clamp">Product</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="/pricing.html" class="nav__link line-clamp">Pricing</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="/contactUs.html" class="nav__link line-clamp"
+                            >Contact Us</a
+                        >
+                    </li>
+                    <li class="nav__item">
+                        <a href="/blog.html" class="nav__link line-clamp">Blog</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="/about.html" class="nav__link line-clamp">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script src="../assets/script/styles.js"></script>
+    </body>
+</html>

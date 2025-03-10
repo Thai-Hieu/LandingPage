@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./assets/css/main.css" />
+        <script src="./assets/script/main.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./templates/header.html");
+        </script>
+
+        <div class="contact">
+            <div class="container">
+                <div class="contact__inner">
+                    <h3 class="contact__head">Contact With Us</h3>
+                    <p class="contact__desc">
+                        The right move at the right time saves your investment. live the
+                        dream of expanding your business.
+                    </p>
+                    <form action="">
+                        <div class="row row-cols-lg-2 row-cols-md-1 row-cols-sm-1">
+                            <div class="col">
+                                <div class="contact__form-group">
+                                    <label class="contact__label" for="firstname"
+                                        >First Name:</label
+                                    >
+                                    <input
+                                        id="firstname"
+                                        type="text"
+                                        class="contact__input contact__input-text"
+                                        placeholder="First name"
+                                        required
+                                    />
+                                    <label class="contact__label" for="email"
+                                        >Email:</label
+                                    >
+                                    <input
+                                        id="email"
+                                        type="email"
+                                        class="contact__input contact__input-email"
+                                        placeholder="Your email"
+                                        pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                                        required
+                                    />
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="contact__form-group">
+                                    <label class="contact__label" for="lastname"
+                                        >Last Name:</label
+                                    >
+                                    <input
+                                        id="lastname"
+                                        type="text"
+                                        class="contact__input contact__input-text-two"
+                                        placeholder="Last name"
+                                        required
+                                    />
+                                    <label class="contact__label" for="tel">Tel:</label>
+                                    <input
+                                        id="tel"
+                                        type="tel"
+                                        class="contact__input contact__input-tel"
+                                        placeholder="Phone number"
+                                        pattern="^[+]?[0-9]{9,12}$"
+                                        required
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="contact__form-group">
+                                <textarea
+                                    class="contact__textarea"
+                                    name=""
+                                    id=""
+                                    placeholder="Tell us about yourself"
+                                    required
+                                ></textarea>
+                            </div>
+                        </div>
+                        <div class="contact__form-group-submit">
+                            <input
+                                class="contact__input-submit"
+                                type="submit"
+                                value="Submit"
+                            />
+                        </div>
+                    </form>
+                    <div class="contact__action">
+                        <button class="contact__btn">Contact us</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer" class="footer"></footer>
+        <script>
+            load("#footer", "./templates/footer.html");
+        </script>
+        <script src="./assets/script/styles.js"></script>
+    </body>
+</html>
