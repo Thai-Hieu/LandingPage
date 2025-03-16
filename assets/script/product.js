@@ -11,7 +11,7 @@ async function fetchApI() {
         showProduct(products);
     } catch (error) {
         console.log("Error call API!", error);
-        showNotFound();
+        // showNotFound();
     }
 }
 
@@ -25,32 +25,32 @@ function loadCartFromLocalStorage() {
     updateCart();
 }
 
-function showNotFound() {
-    let notFound = document.getElementById("notFound");
-    notFound.innerHTML = ""; // Xóa nội dung cũ
+// function showNotFound() {
+//     let notFound = document.getElementById("notFound");
+//     notFound.innerHTML = ""; // Xóa nội dung cũ
 
-    if (!products || products.length === 0) {
-        products.forEach((product) => {
-            if (product) {
-                return;
-            } else {
-                // Kiểm tra nếu API bị lỗi hoặc không có sản phẩm
-                let errorDiv = document.createElement("div");
-                errorDiv.classList.add("container");
-                errorDiv.innerHTML = `
-                <div class="notFound__inner">
-                    <h4 class="notFound__heading">Không tìm thấy sản phẩm!</h4>
-                    <img src="./assets/imgs/404 Error-pana 1.png" alt="Error" class="notFound__img-error"/>
-                    <div class="notFound__action">
-                        <a href="/"><button class="notFound__btn-back">GO BACK</button></a>
-                    </div>
-                </div>
-            `;
-            }
-        });
-        notFound.appendChild(errorDiv);
-    }
-}
+//     if (!products || products.length === 0) {
+//         products.forEach((product) => {
+//             if (product) {
+//                 return;
+//             } else {
+//                 // Kiểm tra nếu API bị lỗi hoặc không có sản phẩm
+//                 let errorDiv = document.createElement("div");
+//                 errorDiv.classList.add("container");
+//                 errorDiv.innerHTML = `
+//                 <div class="notFound__inner">
+//                     <h4 class="notFound__heading">Không tìm thấy sản phẩm!</h4>
+//                     <img src="./assets/imgs/404 Error-pana 1.png" alt="Error" class="notFound__img-error"/>
+//                     <div class="notFound__action">
+//                         <a href="/"><button class="notFound__btn-back">GO BACK</button></a>
+//                     </div>
+//                 </div>
+//             `;
+//             }
+//         });
+//         notFound.appendChild(errorDiv);
+//     }
+// }
 
 function showProduct(products) {
     products.forEach((product) => {
