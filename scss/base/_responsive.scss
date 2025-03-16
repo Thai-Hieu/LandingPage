@@ -156,6 +156,11 @@
 
 // Mobile
 @media (max-width: 46.1875em) {
+    .container {
+        --grid-gutter-x: 10px;
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+    }
     .header__wrap {
         padding: 10px 0;
     }
@@ -254,6 +259,9 @@
     .producted {
         padding: 30px 0;
         background: #f2ede6;
+    }
+    .producted .row__coll {
+        width: 50%;
     }
     .producted__header {
         font-size: 3rem;
